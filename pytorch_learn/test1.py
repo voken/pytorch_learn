@@ -14,7 +14,9 @@ def imshow(img):
     # print labels
 
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
+    # 打印预测结果
     print(' '.join('%5s' % source1.classes[labels[j]] for j in range(4)))
+    # 显示预测的结果,与上面打印的结果对比，查看是否正确
     plt.show()
 
 # get some random training images
